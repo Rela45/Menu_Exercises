@@ -17,6 +17,7 @@ internal class Program
                 { 6, ("Esercizio GreetingService", GreetingServiceMain.Run) },
                 { 7, ("Esercizio PaymentService", PaymentProcessMain.Run) },
                 { 8, ("Esercizio ConfigurazioneSistemaDualPattern", RunClass.Run) },
+                { 9, ("Esercizio Veicolo con Factory (da correggere)", VeicoloConFactoryMethodMain.Run) },
             };
 
         
