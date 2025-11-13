@@ -13,7 +13,10 @@ internal class Program
                 { 2, ("Esercizio StrategyCalcolatrice", CalcolatriceMain.Run) },
                 { 3, ("Esercizio MiniAppPagamenti con enum", PagamentiMain.Run) },
                 { 4, ("Esercizio Singleton Logger", LoggerMain.Run) },
-                { 4, ("Esercizio OrderHub", AppconfigMain.Run) },
+                { 5, ("Esercizio OrderHub", AppconfigMain.Run) },
+                { 6, ("Esercizio GreetingService", GreetingServiceMain.Run) },
+                { 7, ("Esercizio PaymentService", PaymentProcessMain.Run) },
+                { 8, ("Esercizio ConfigurazioneSistemaDualPattern", RunClass.Run) },
             };
 
         
