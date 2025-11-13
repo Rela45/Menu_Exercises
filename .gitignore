@@ -1,0 +1,114 @@
+# Compilazioni binarie
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+
+# Build temporanee e pubblicazioni
+*.exe
+*.dll
+*.pdb
+*.mdb
+*.cache
+*.log
+*.tmp
+*.bak
+*.swp
+*.user
+*.suo
+*.userprefs
+*.csproj.user
+
+# File generati da Visual Studio / Rider
+.vs/
+.idea/
+.vscode/
+*.code-workspace
+
+# File di configurazione temporanei
+launchSettings.json
+appsettings.Development.json
+
+# File di pacchetti e dipendenze
+*.nupkg
+*.snupkg
+*.nuspec
+*.package
+*.config
+packages/
+node_modules/
+
+# File di distribuzione
+publish/
+dist/
+Build/
+Builds/
+build/
+builds/
+
+# File Assembly generati automaticamente
+**/Assembly*.cs
+
+# Cache di sistema e metadati
+[Tt]emp/
+*.tmp
+*.bak
+*.old
+*.orig
+
+# File di sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Test e coverage
+TestResult*/
+[Tt]est[Rr]esults/
+coverage/
+*.coverage
+*.coveragexml
+
+# File generati da strumenti di profiling
+*.psess
+*.vsp
+*.vspx
+
+# Documentazione temporanea
+*.docstates
+
+##############################
+# 🕹️ Se usi Unity
+##############################
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+UserSettings/
+*.pidb
+*.booproj
+*.svd
+*.unitypackage
+*.apk
+*.aab
+
+# Impostazioni di Unity Cloud / Collaborate
+sysinfo.txt
+*.collabignore
+
+# Cache di Lightmapping e GI
+LightmapSnapshot*
+LightingData.asset
+GI/
+
+# Cache di Shader
+ShaderCache/
+*.shadergraph.meta
