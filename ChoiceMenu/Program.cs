@@ -25,11 +25,11 @@ internal class Program
         while (!exit)
         {
             Console.Clear();
-            Console.WriteLine("=== 📚 MENU ESERCIZI ===");
+            Console.WriteLine("===  MENU ESERCIZI ===");
             foreach (var kvp in esercizi)
                 Console.WriteLine($"{kvp.Key}. {kvp.Value.Nome}");
 
-            Console.WriteLine("0. ❌ Esci");
+            Console.WriteLine("0. Esci");
             Console.Write("\nSeleziona un esercizio: ");
 
             string input = Console.ReadLine();
@@ -43,7 +43,7 @@ internal class Program
                 else if (esercizi.ContainsKey(scelta))
                 {
                     Console.Clear();
-                    Console.WriteLine($"▶ Esecuzione esercizio {scelta}...\n");
+                    Console.WriteLine($" Esecuzione esercizio {scelta}...\n");
                     esercizi[scelta].Metodo.Invoke();
 
                     Console.WriteLine("\nPremi un tasto per tornare al menu...");
@@ -51,13 +51,13 @@ internal class Program
                 }
                 else
                 {
-                    Console.WriteLine("❗ Esercizio non valido!");
+                    Console.WriteLine(" Esercizio non valido!");
                     Console.ReadKey();
                 }
             }
             else
             {
-                Console.WriteLine("❗ Inserisci un numero valido!");
+                Console.WriteLine(" Inserisci un numero valido!");
                 Console.ReadKey();
             }
         }
