@@ -1,3 +1,5 @@
+namespace Esercizio3Pattern{
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -42,4 +44,5 @@ public class Utente
     {
         return $"Nome : {nome}";
     }
+}
 }

@@ -1,4 +1,5 @@
-﻿class MainObserverMeteo
+﻿using Meteo;
+class MainObserverMeteo
 {
     public static void Run()
     {

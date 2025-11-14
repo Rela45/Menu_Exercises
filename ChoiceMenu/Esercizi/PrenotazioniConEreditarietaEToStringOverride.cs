@@ -2,7 +2,7 @@
 
 
 
-class PrenotazioneViaggio
+public class PrenotazioneViaggio
 {
     private int postiPrenotati;
     private const int MAX_POSTI = 20;
@@ -49,16 +49,18 @@ class PrenotazioneViaggio
 
 }
 
-class Utente : PrenotazioneViaggio
+public class Utente : PrenotazioneViaggio
 {
-    private string? nome;
+    private readonly string nome;
 
-    public Utente(string? nome)
+    public Utente(string name)
     {
-        this.nome = nome;
+        nome = name;
     }
+
     public override string ToString()
     {
+        // ToString must not return null; ensure non-null string
         return nome;
     }
 }

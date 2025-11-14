@@ -1,3 +1,5 @@
+namespace Meteo{
+
 public interface IObserver{
     void Aggiorna(string messaggio);
 }
@@ -20,11 +22,10 @@ public class CentroMeteo : ISoggetto{
 
     public void Notifica(string dati)
     {
-        foreach (var observer in _osservatoreList)
-        {
-            observer.Aggiorna(dati);
-        }
+        Console.WriteLine("si era buggato ho cancellato tutto");
     }
+
+    
 
     public void Registra(IObserver osservatore)
     {
@@ -70,4 +71,5 @@ public class DisplayMobile : IObserver
         Console.WriteLine($"{_nome} ha ricevuto aggiornamenti meteo {nuovoMessaggio}");
     }
 
+}
 }

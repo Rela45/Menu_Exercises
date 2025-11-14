@@ -27,7 +27,7 @@ internal class Program
                 { 15,("Esercizio NewsAgency con Singleton", MainNewsAgency.Run) },
                 { 16,("Esercizio di Esempio Bevande con Decorator", MainEsempioDecorator.Run) },
                 { 17,("Esercizio di Esempio Bevande con Decorator", MainEsThreePattern.Run) },
-                { 17,("Esercizio di Esempio di DBMS fatto con un Dictionary", MainEsDictionaryDbms.Run) },
+                { 18,("Esercizio di Esempio di DBMS fatto con un Dictionary", MainEsDictionaryDbms.Run) },
             };
 
         
