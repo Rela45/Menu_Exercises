@@ -26,8 +26,9 @@ internal class Program
                 { 14,("Esercizio Observer notifiche meteo", MainObserverMeteo.Run) },
                 { 15,("Esercizio NewsAgency con Singleton", MainNewsAgency.Run) },
                 { 16,("Esercizio di Esempio Bevande con Decorator", MainEsempioDecorator.Run) },
-                { 17,("Esercizio di Esempio Bevande con Decorator", MainEsThreePattern.Run) },
+                { 17,("Esercizio con 3 pattern", MainEsThreePattern.Run) },
                 { 18,("Esercizio di Esempio di DBMS fatto con un Dictionary", MainEsDictionaryDbms.Run) },
+                { 19,("Esercizio connessione ad un DBMS MySql con operazioni CRUD (cercare di rimuovere dati personali)", MainSql.Run) },
             };
 
         
