@@ -18,6 +18,7 @@ internal class Program
                 { 7, ("Esercizio PaymentService", PaymentProcessMain.Run) },
                 { 8, ("Esercizio ConfigurazioneSistemaDualPattern", RunClass.Run) },
                 { 9, ("Esercizio Veicolo con Factory (da correggere)", VeicoloConFactoryMethodMain.Run) },
+                { 10, ("Esercizio Save on Disk or Cache (hardcoded)", MainSaver.Run) },
             };
 
         
