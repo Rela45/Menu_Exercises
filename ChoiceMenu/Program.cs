@@ -1,6 +1,7 @@
 ﻿using AppConfig;
 using Logger;
 using MiniAppPagamenti;
+using EsDbmsWithDictionary;
 internal class Program
 {
     static void Main()
@@ -24,6 +25,9 @@ internal class Program
                 { 13,("Esercizio Prenotazioni con ereditarieta e tostring override (da correggere, esercizio vecchio)", MainPrenotazioniEreditarieta.Run) },
                 { 14,("Esercizio Observer notifiche meteo", MainObserverMeteo.Run) },
                 { 15,("Esercizio NewsAgency con Singleton", MainNewsAgency.Run) },
+                { 16,("Esercizio di Esempio Bevande con Decorator", MainEsempioDecorator.Run) },
+                { 17,("Esercizio di Esempio Bevande con Decorator", MainEsThreePattern.Run) },
+                { 17,("Esercizio di Esempio di DBMS fatto con un Dictionary", MainEsDictionaryDbms.Run) },
             };
 
         
