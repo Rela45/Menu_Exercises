@@ -22,6 +22,8 @@ internal class Program
                 { 11,("Esercizio Livello Accesso con enums (da correggere output)", MainLivelloAccesso.Run) },
                 { 12,("Esercizio Notifier con enums", MainNotifier.Run) },
                 { 13,("Esercizio Prenotazioni con ereditarieta e tostring override (da correggere, esercizio vecchio)", MainPrenotazioniEreditarieta.Run) },
+                { 14,("Esercizio Observer notifiche meteo", MainObserverMeteo.Run) },
+                { 15,("Esercizio NewsAgency con Singleton", MainNewsAgency.Run) },
             };
 
         
