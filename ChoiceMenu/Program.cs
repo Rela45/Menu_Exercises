@@ -30,6 +30,7 @@ internal class Program
                 { 18,("Esercizio di Esempio di DBMS fatto con un Dictionary", MainEsDictionaryDbms.Run) },
                 { 19,("Esercizio connessione ad un DBMS MySql con operazioni CRUD (cercare di rimuovere dati personali)", MainSql.Run) },
                 { 20,("Esercizio Sistema di Ordini con Enums, singleton e record, gestendo l'app avendo un solo domain ", MainSistemaOrdini.Run) },
+                { 21,("Esercizio ereditarieta' (inizio corso, in fase di correzione)", EsercizioAvanzatoCorsoMain.Run) },
             };
 
         
