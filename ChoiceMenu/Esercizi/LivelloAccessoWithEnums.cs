@@ -42,7 +42,7 @@ class MainLivelloAccesso
     public static void Run()
     {
         var accesso = new Access();
-        Console.WriteLine($"inserisci Il tuo livello");
+        Console.WriteLine($"inserisci Il tuo livello (Rookie, Mid, Pro)");
         
         string input = Console.ReadLine();
         switch (input)
