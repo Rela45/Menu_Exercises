@@ -7,7 +7,6 @@ namespace EsercizioModShop
 
         public static ArmaAstratta MakeArma()
         {
-            // Step 1: Create base weapon
             ArmaAstratta rifle = new Rifle("DragonBreath");
             armi.Add(rifle);
             return rifle;

@@ -9,9 +9,8 @@ public static class MainModShop
         Console.WriteLine("Arma base creata:");
         Console.WriteLine(rifle.ToString());
         bool continua = true;
-        double prezzoStickers = 2.50;   
-        double sumTotal = prezzoStickers; 
-        AppContext.Instance.SetPrezzo(prezzoStickers);
+        
+        // AppContext.Instance.SetPrezzo(prezzoStickers);
         while (continua)
         {
             Console.WriteLine($"==== MENU DI SCELTE === \n1 Aggiungi sticker \n2 Stamp dell'arma attuale \n3 Esci dal programma");
@@ -21,7 +20,7 @@ public static class MainModShop
                 case "1":
                     Console.WriteLine($"Aggiungi il nome dello sticker");
                     string? nomeSticker = Console.ReadLine();
-                    sumTotal += prezzoStickers;
+                    double sumTotal = 2.5;
                     AppContext.Instance.SetPrezzo(sumTotal);
                     rifle = new StickerDecorator(rifle, nomeSticker);
                     Console.WriteLine($"Sticker {nomeSticker} aggiunto all'arma");

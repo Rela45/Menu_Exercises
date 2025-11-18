@@ -9,7 +9,7 @@ public sealed class AppContext
 
     public void SetPrezzo(double nuovoPrezzo)
     {
-        prezzo = nuovoPrezzo;
+        prezzo += nuovoPrezzo;
     }
 
 }
