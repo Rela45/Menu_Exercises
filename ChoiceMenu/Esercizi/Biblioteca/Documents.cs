@@ -4,9 +4,17 @@ namespace Biblioteca
     {
         private string? _id;
         private string? _title;
-        private string? _year;
-        private string? _sector;
+        private int _year;
+        private int _sector;
         private bool _disponibile;
-        
+
+        public Documents(string? id, string? title, int year, int sector, bool disponibile)
+        {
+            _id = id;
+            _title = title;
+            _year = year;
+            _sector = sector;
+            _disponibile = disponibile;
+        }
     }
 }
