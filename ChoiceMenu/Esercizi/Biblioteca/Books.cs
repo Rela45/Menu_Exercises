@@ -4,9 +4,14 @@ namespace Biblioteca
     {
         private int _nPages;
 
-        public Books(string? id, string? title, int year, int sector, bool disponibile, int pages) : base(id, title, year, sector, disponibile)
+        public Books(int id, string? title, int year, int sector, bool disponibile, int pages) : base(id, title, year, sector, disponibile)
         {
             _nPages = pages;
+        }
+
+        public override string ToString()
+        {
+            return base.ToString() + $"Number of Pages {_nPages}";
         }
     }
 }

@@ -2,6 +2,7 @@
 using Logger;
 using MiniAppPagamenti;
 using EsDbmsWithDictionary;
+using Biblioteca;
 internal class Program
 {
     static void Main()
@@ -32,6 +33,7 @@ internal class Program
                 { 20,("Esercizio Sistema di Ordini con Enums, singleton e record, gestendo l'app avendo un solo domain ", MainSistemaOrdini.Run) },
                 { 21,("Esercizio ereditarieta' (inizio corso, in fase di correzione)", EsercizioAvanzatoCorsoMain.Run) },
                 { 22,("Esercizio After Corso con piu pattern mischiati (al momento decorator, singleton e factory)", MainModShop.Run) },
+                { 23,("Esercizio After Corso Menu Biblioteca da aggiornare con Sql in seguito)", MainMenu.Run) },
             };
 
         
