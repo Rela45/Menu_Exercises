@@ -24,9 +24,11 @@ namespace BibliotecaWithMySql
                 // Execute the query and obtain a data reader
                 using (MySqlDataReader reader = cmd.ExecuteReader())
                 {
-                    Console.WriteLine("===== Dvd presenti nello store =====");
-                    Console.WriteLine("{0,-5} | {1,-20} | {2,-15}| {3, -10} | {4, -7}", "ID", "Titolo", "Genere", "anno","regista");
-                    Console.WriteLine(new string('-', 50));
+                    Console.WriteLine(new string('=', 40) + " Dvd presenti nello store " + new string('=', 40));
+                    Console.WriteLine("{0,-5} | {1,-20} | {2,-15} | {3,-6} | {4,-30}",
+                                        "ID", "Titolo", "Genere", "Anno", "Regista");
+                    Console.WriteLine(new string('-', 100));
+
 
                     // Iterate through all returned rows
                     while (reader.Read())
@@ -38,12 +40,12 @@ namespace BibliotecaWithMySql
                         string? regista = reader.GetString("regista");
 
                         // Print each row formatted as a table
-                        Console.WriteLine("{0,-5} | {1,-20} | {2,-15} | {3, -10} | {4, -7}", id, titolo, genere, anno, regista);
+                        Console.WriteLine("{0,-5} | {1,-20} | {2,-15} | {3, -10} | {4, -20}", id, titolo, genere, anno, regista);
                     }
                     reader.Close(); // Closes the data reader
-                    Console.WriteLine(new string('=', 50));
+                    Console.WriteLine(new string('=', 100));
+                    Console.WriteLine();
                 }
-                Console.WriteLine($"=======================================");
             }
             catch (Exception e)
             {
@@ -58,7 +60,7 @@ namespace BibliotecaWithMySql
             bool continua = true;
             while (continua)
             {
-                Console.WriteLine($"=====MENU====\n1. Visualizza tutti i prodotti");
+                Console.WriteLine($"=========================MENU=============================\n1. Visualizza tutti i prodotti");
                 string? scelta = Console.ReadLine();
                 switch (scelta)
                 {
