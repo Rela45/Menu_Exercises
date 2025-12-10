@@ -3,6 +3,7 @@ using Logger;
 using MiniAppPagamenti;
 using EsDbmsWithDictionary;
 using Biblioteca;
+using BibliotecaWithMySql;
 internal class Program
 {
     static void Main()
@@ -34,6 +35,7 @@ internal class Program
                 { 21,("Esercizio ereditarieta' (inizio corso, in fase di correzione)", EsercizioAvanzatoCorsoMain.Run) },
                 { 22,("Esercizio After Corso con piu pattern mischiati (al momento decorator, singleton e factory)", MainModShop.Run) },
                 { 23,("Esercizio After Corso Menu Biblioteca da aggiornare con Sql in seguito)", MainMenu.Run) },
+                { 24,("Esercizio After Corso Menu Biblioteca aggiornato con MySql)", MainBiblioteca.Run)},
             };
 
         
