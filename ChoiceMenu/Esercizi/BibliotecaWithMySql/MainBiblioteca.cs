@@ -4,6 +4,9 @@ using MySql.Data.MySqlClient;
 using Biblioteca;
 using User = Biblioteca.User;
 using AppConfig;
+using Domain;
+using System.Diagnostics.Contracts;
+using System.Runtime.InteropServices.Marshalling;
 
 namespace BibliotecaWithMySql
 {
@@ -66,7 +69,7 @@ namespace BibliotecaWithMySql
         static string connString = "server=localhost;user=root;password=110803Ilaria;database=test_libreria_vendite";
         public static void Run()
         {
-            bool continua = true;
+            bool loop = true;
             Console.WriteLine($"HI! Welcome in the store. ");
             
             Console.WriteLine($"Insert name");
@@ -81,10 +84,11 @@ namespace BibliotecaWithMySql
             {
                 new Biblioteca.User(name,surname,email,psw)
             };
-            while (continua)
+            while (loop)
             {
-                Console.WriteLine($"=========================MENU=============================\n1. Display all products\n2. Order Products by ID");
+                Console.WriteLine($"=========================MENU=============================\n1. Display all products\n2. Order Products by ID\n3. Order Product by title");
                 string? scelta = Console.ReadLine();
+                
                 switch (scelta)
                 {
                     case "1":
@@ -92,6 +96,13 @@ namespace BibliotecaWithMySql
                         break;
                     case "2":
                         Order.Instance.OrderById();
+                        break;
+                    case "3":
+                        Order.Instance.OrderByTitle();
+                        break;
+                    case "4":
+                        Console.WriteLine($"See you again!");
+                        loop = false;
                         break;
                     default:
                         break;
