@@ -25,11 +25,24 @@ namespace BibliotecaWithMySql
 
         private Order(){}
 
-        public void OrderById(int scelta)
-        {
+        public void OrderById(int userValue)
+        {//here i have to manage what type of order i want to do (dvd or book)
+            Console.WriteLine($"Do you want to order a dvd or a book?");
+            string? choice = Console.ReadLine();
+            if(!Enum.TryParse(choice, ignoreCase: true, out TipoProdotto result))
+            {
+                Console.WriteLine($"No exisisting products found");
+                return;
+            }
+            switch (result)
+            {
+                case TipoProdotto.libro:
+
+                    break;
+            }
             using (MySqlConnection conn = new MySqlConnection(connString))
             {
-                string query = $"SELECT id, titolo FROM libri WHERE libri.id = {scelta}";
+                string query = $"SELECT id, titolo FROM libri WHERE libri.id = {userValue}";
                 try
                 {
                     conn.Open();

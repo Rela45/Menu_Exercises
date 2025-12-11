@@ -67,9 +67,23 @@ namespace BibliotecaWithMySql
         public static void Run()
         {
             bool continua = true;
+            Console.WriteLine($"HI! Welcome in the store. ");
+            
+            Console.WriteLine($"Insert name");
+            string? name = Console.ReadLine();
+            Console.WriteLine($"Insert surname");
+            string? surname = Console.ReadLine();
+            Console.WriteLine($"Insert your email");
+            string? email = Console.ReadLine();
+            Console.WriteLine($"Insert a password");
+            string? psw = Console.ReadLine();
+            List<Biblioteca.User> listOfUsers = new List<Biblioteca.User>
+            {
+                new Biblioteca.User(name,surname,email,psw)
+            };
             while (continua)
             {
-                Console.WriteLine($"=========================MENU=============================\n1. Visualizza tutti i prodotti\n2. Ordina Prodotto");
+                Console.WriteLine($"=========================MENU=============================\n1. Display all products\n2. Order Products by ID");
                 string? scelta = Console.ReadLine();
                 switch (scelta)
                 {
@@ -77,24 +91,12 @@ namespace BibliotecaWithMySql
                         ReadAllDB();
                         break;
                     case "2":
-                        Console.WriteLine($"inserisci il tuo nome");
-                        string? name = Console.ReadLine();
-                        Console.WriteLine($"inserisci il tuo cognome");
-                        string? surname = Console.ReadLine();
-                        Console.WriteLine($"inserisci la tua email");
-                        string? email = Console.ReadLine();
-                        Console.WriteLine($"inserisci la password");
-                        string? psw = Console.ReadLine();
-                        List<Biblioteca.User> listOfUsers = new List<Biblioteca.User>
-                            {
-                                new Biblioteca.User(name,surname,email,psw)
-                            };
-                            Order.Instance.OrderById(1);
+                        Order.Instance.OrderById(1);
                         break;
                     default:
                         break;
                 }
-                
+
             }
         }
     }
