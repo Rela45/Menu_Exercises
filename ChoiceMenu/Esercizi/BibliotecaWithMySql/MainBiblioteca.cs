@@ -18,7 +18,7 @@ namespace BibliotecaWithMySql
                 try
                 {
                     conn.Open();
-                    Console.WriteLine("Connessione riuscita!");
+                    Console.WriteLine("Connection extablished!");
 
                     string query =
                         "SELECT id, titolo, genere, autore AS creatore, 'LIBRO' AS tipo FROM libri " +
@@ -29,7 +29,7 @@ namespace BibliotecaWithMySql
 
                     using (MySqlDataReader reader = cmd.ExecuteReader())
                     {
-                        Console.WriteLine(new string('=', 40) + " Prodotti presenti nello store " + new string('=', 40));
+                        Console.WriteLine(new string('=', 40) + " Product in the store " + new string('=', 40));
 
                         Console.WriteLine(
                             "{0,-5} | {1,-30} | {2,-15} | {3,-25} | {4,-10}",
@@ -91,7 +91,7 @@ namespace BibliotecaWithMySql
                         ReadAllDB();
                         break;
                     case "2":
-                        Order.Instance.OrderById(1);
+                        Order.Instance.OrderById();
                         break;
                     default:
                         break;
