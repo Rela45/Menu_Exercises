@@ -86,7 +86,7 @@ namespace BibliotecaWithMySql
             };
             while (loop)
             {
-                Console.WriteLine($"=========================MENU=============================\n1. Display all products\n2. Order Products by ID\n3. Order Product by title");
+                Console.WriteLine($"=========================MENU=============================\n1. Display all products\n2. Order Products by ID\n3. Order Product by title\n4. Exit");
                 string? scelta = Console.ReadLine();
                 
                 switch (scelta)
