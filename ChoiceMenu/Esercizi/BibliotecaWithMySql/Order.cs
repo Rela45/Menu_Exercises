@@ -30,10 +30,6 @@ namespace BibliotecaWithMySql
             Console.WriteLine("Do you want to order a dvd or a book?");
             string? rawChoice = Console.ReadLine()?.Trim().ToLower();
 
-            // accept english/italian synonyms
-            if (rawChoice == "book") rawChoice = "libro";
-            if (rawChoice == "dvd" || rawChoice == "dvd") { /* keep as dvd */ }
-
             if (!Enum.TryParse<TipoProdotto>(rawChoice, ignoreCase: true, out TipoProdotto result))
             {
                 Console.WriteLine("No existing products found");
